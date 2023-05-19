@@ -1,0 +1,283 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  margin-top: 40px;
+}
+
+.contenedor b {
+  align-items: center;
+}
+
+.barra-superior {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo {
+  position: relative;
+  height: 90px;
+}
+
+.logo img {
+  max-height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+}
+
+.botones-barra-superior {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.botones-barra-superior a {
+  margin-right: 0;
+  justify-content: center;
+}
+
+.appg {
+  margin: 0 15px;
+  margin-top: auto;
+}
+
+.boton-iniciar-sesion {
+  font-family: google, sans, roboto, hevetica, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: .25px;
+  line-height: 16px;
+  text-align: center;
+  background: #1a73e8;
+  border: 1px solid transparent;
+  margin-left: 8px;
+  cursor: pointer;
+  padding: 9px 23px;
+  padding-top: 10px;
+  border-radius: 4px;
+}
+
+.boton-iniciar-sesion a {
+  top: 10px;
+  color: white;
+}
+
+.buscador {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  margin-top: 60px;
+  margin-left: -41px;
+}
+
+.buscador-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 24px;
+  background-color: #fff;
+  width: 580px;
+}
+
+.buscador-input input[type="text"] {
+  background-color: transparent;
+  border: none;
+  height: 48px;
+  padding: 0 30px;
+  font-size: 16px;
+  flex: 1;
+  display: flex;
+  padding: 0 50px px 0 50px;
+  font-size: 14px;
+  font-family: arial, sans-serif;
+  z-index: 3;
+  min-height: 44px;
+  border: 1px solid #817d7d;
+  box-shadow: none;
+  border-radius: 24px;
+  margin: 0 auto;
+
+}
+
+.icono-busqueda {
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+}
+
+.icono-busqueda img {
+  padding-left: 80px;
+}
+
+.icono-microfono {
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+}
+
+.icono-microfono img {
+  padding-left: 500px;
+}
+
+.icono-lents {
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+}
+
+.icono-lents img {
+  padding-left: 500px;
+}
+
+
+.botones-buscador {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.botones-buscador button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+}
+
+.botones-buscador button:hover {
+  background-color: #e6e6e6;
+}
+
+.gm {
+  margin-right: 15px;
+  font-weight: normal;
+  color: black;
+}
+
+.imagenes {
+  font-weight: normal;
+  color: black;
+}
+
+.idioma {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.colora {
+  color: #1a73e8;
+  flex-grow: 0.05;
+}
+
+.pie {
+  background: #eeecec;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.pieb {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: #817d7d 1px solid;
+}
+
+.foot {
+  align-self: flex-start;
+  padding: 10px;
+}
+
+.col {
+  padding: 15px 15px;
+  background: #eeecec;
+  border-bottom: 1px solid 3c4043;
+  font-size: 15px;
+  color: gray;
+}
+
+.final {
+  display: flex;
+  gap: 20px;
+}
+
+/* Media query para pantallas */
+@media screen and (max-width: 768px) {
+  .contenedor {
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .barra-superior {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .botones-barra-superior {
+    margin-top: 10px;
+  }
+
+  .boton-iniciar-sesion {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .buscador {
+    margin-top: 40px;
+  }
+
+  .buscador-input input[type="text"] {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .botones-buscador {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .botones-buscador button {
+    margin-bottom: 10px;
+  }
+}
+
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 480px) {
+  .barra-superior {
+    padding: 5px;
+  }
+
+  .boton-iniciar-sesion {
+    font-size: 12px;
+    padding: 7px 15px;
+  }
+
+  .buscador-input input[type="text"] {
+    padding: 0 10px;
+    font-size: 12px;
+    min-height: 36px;
+  }
+
+  .icono-busqueda,
+  .icono-microfono {
+    width: 18px;
+    height: 18px;
+  }
+
+  .botones-buscador button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
