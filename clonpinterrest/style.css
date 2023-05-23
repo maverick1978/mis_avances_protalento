@@ -4,18 +4,92 @@
     box-sizing: border-box;
 }
 
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50px;
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
+.navbar {
     display: flex;
     align-items: center;
-    padding: 0 20px;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px;
 }
+
+.left-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.left-buttons button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #fff;
+    color: #000;
+}
+
+.left-buttons button.selected {
+    background-color: #000;
+    color: #fff;
+}
+
+.left-buttons button:active {
+    background-color: #000;
+    color: #fff;
+}
+
+.logo {
+    height: 30px;
+    width: 30px;
+    background-color: #ccc;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.search-icon {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/149/149852.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+}
+
+button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    background: white;
+    color: black
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+}
+
+.buttons button {
+    margin-right: 10px;
+}
+
+.profile {
+    height: 30px;
+    width: 30px;
+    background-color: #ccc;
+}
+
 
 nav input {
     flex-grow: 1;
@@ -23,16 +97,9 @@ nav input {
     border-radius: 15px;
     padding: 0 10px;
     border: none;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 2px gray;
 }
 
-nav div {
-    width: 30px;
-    height: 30px;
-    background-color: #ddd;
-    margin-left: 20px;
-    border-radius: 50%;
-}
 
 #content {
     margin-top: 250px;
@@ -41,11 +108,13 @@ nav div {
     align-items: center;
     justify-content: center;
 }
-.navbar-left{
+
+.navbar-left {
     display: flex;
     align-items: center;
 }
-.navbar-left button{
+
+.navbar-left button {
     background-color: transparent;
     border: none;
     color: #333;
@@ -53,6 +122,7 @@ nav div {
     margin-right: 20px;
     cursor: pointer;
 }
+
 .card-image {
     width: 300px;
     height: 400px;
