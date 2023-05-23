@@ -1,46 +1,49 @@
-<!DOCTYPE html>
+
 <html>
 
 <head>
-    <title>Pinterest</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <img src="imagenes/logo.png" alt="logop">
-            </div>
-            <div class="left-buttons">
-                <button>Inicio</button>
-                <button>Explorer</button>
-                <button>Crear</button>
-            </div>
-            <div class="search">
-                <button>
-                    <scan class="search-icon"></scan>
-                </button>
-                <input type="text" class="finder" placeholder="Buscar">
-                </div>
-            <div class="buttons">
-                <button>Mensajes</button>
-                <button>Notificaciones</button>
-                <div class="profile"></div>
-            </div>
-        </nav>
-    </header>
-    <main id="content">
-        <a href="https://www.pinterest.com"><img src="pinterest-icon.png" id="pinterest-icon"></a>
-        <div class="card-image">
-            <img src="imagenes/imagen1.png">
-            <div class="card-buttons">
-                <button>Me gusta</button>
-                <button>Guardar</button>
+    <div class="header">
+        <h1>Pinterest</h1>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1506802913710-40e2e66339c9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2FyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                alt="Car" class="card-image">
+            <div class="card-content">
+                <h4>Car</h4>
+                <p>A car is a wheeled motor vehicle used for transportation.</p>
+                <a href="#">See more</a>
             </div>
         </div>
-        <!-- Aquí van las otras 29 imágenes -->
-    </main>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1494548162494-384bba4ab999?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2FrZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                alt="Cake" class="card-image">
+            <div class="card-content">
+                <h4>Cake</h4>
+                <p>A cake is a sweet dessert that is typically baked.</p>
+                <a href="#">See more</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1504198453319-5ce911bafcde?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2F0fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                alt="Cat" class="card-image">
+            <div class="card-content">
+                <h4>Cat</h4>
+                <p>A cat is a domesticated animal that is often kept as a pet.</p>
+                <a href="#">See more</a>
+            </div>
+        </div>
+
+        <!-- Add more cards here -->
+
+    </div>
 </body>
 
 </html>
