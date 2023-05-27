@@ -1,60 +1,345 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Clon de Pinterest</title>
-</head>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Clon de Pinterest</title>
+    </head>
 
 <body>
-    <header class="header">
-        <div class="navbar">
-            <div class="navbar-buttons button">
-                <button class="active">Inicio</button>
-                <button class="active">Explorar</button>
-                <button class="active">Subir</button>
-                <div class="search-bar">
-                    <input type="text" placeholder="Buscar...">
-                    <button><img src="search-icon.png" alt="Buscar"></button>
-                    <div >
-                        <button class="navbar"><img src="notification-icon.png" alt="Notificaciones"></button>
-                        <button class="navbar"><img src="message-icon.png" alt="Mensajes"></button>
-                    </div>
+    <div>
+    <nav id="navbar-pinterest">
+        <div class="logo">
+            <a href="https://www.pinterest.com">
+                <img src="imagenes/logo.png" alt="Pinterest">
+            </a>
+        </div>
+
+        <div class="nav-button">Inicio</div>
+        <div class="nav-button ">Explorer</div>
+        <div class="nav-button ">Crear</div>
+        <div class="search-icon">
+            <img src="imagenes/lupa.png" alt="lupa">
+        </div>
+        <input type="text" class="finder" placeholder="Buscar">
+        <div id="notifications">
+            <img src="imagenes/campana.png" alt="Campana">
+        </div>
+        <div id="message">
+            <img src="imagenes/nube.png" alt="nuebe">
+        </div>
+        <div id="profile-img">
+            <img src="imagenes/perfil.png" alt="perfil">
+        </div>
+    </nav>
+
+    <main id="content" class="image-container">
+        <div class="card-image">
+            <img src="imagenes/imagenesprint/1.jpg" alt="Descripción de la imagen">
+            <div class="image-overlay">
+                <button class="btn-guardar">Guardar</button>
+                <div class="image-icons">
+                    <div class="icon compartir"></div>
+                    <div class="icon tres-puntos"></div>
                 </div>
             </div>
         </div>
-    </header>
-
-    <div class="grid-container">
-        <div class="card">
-            <img src="image1.jpg" alt="Imagen 1">
-            <div class="overlay">
-                <button class="save-button"><img src="save-icon.png" alt="Guardar"></button>
+        <div class="card-image">
+            <img src="imagenes/imagenesprint/2.jpg" alt="Descripción de la imagen">
+            <div class="image-overlay">
+                <button class="btn-guardar">Guardar</button>
+                <div class="image-icons">
+                    <div class="icon compartir"></div>
+                    <div class="icon tres-puntos"></div>
+                </div>
             </div>
-            <h3>Título de la imagen 1</h3>
-            <p>Descripción de la imagen 1</p>
         </div>
-
-        <div class="card">
-            <img src="image2.jpg" alt="Imagen 2">
-            <div class="overlay">
-                <button class="save-button"><img src="save-icon.png" alt="Guardar"></button>
+        <div class="card-image">
+            <img src="imagenes/imagenesprint/3.jpg" alt="Descripción de la imagen">
+            <div class="image-overlay">
+                <button class="btn-guardar">Guardar</button>
+                <div class="image-icons">
+                    <div class="icon compartir"></div>
+                    <div class="icon tres-puntos"></div>
+                </div>
             </div>
-            <h3>Título de la imagen 2</h3>
-            <p>Descripción de la imagen 2</p>
         </div>
-
-        <div class="card">
-            <img src="image3.jpg" alt="Imagen 3">
-            <div class="overlay">
-                <button class="save-button"><img src="save-icon.png" alt="Guardar"></button>
+        <div class="card-image">
+            <img src="imagenes/imagenesprint/4.jpg" alt="Descripción de la imagen">
+            <div class="image-overlay">
+                <button class="btn-guardar">Guardar</button>
+                <div class="image-icons">
+                    <div class="icon compartir"></div>
+                    <div class="icon tres-puntos"></div>
+                </div>
             </div>
-            <h3>Título de la imagen 3</h3>
-            <p>Descripción de la imagen 3</p>
         </div>
-    </div>
+        <div class="card-image">
+            <img src="imagenes/imagenesprint/5.jpg" alt="Descripción de la imagen">
+            <div class="image-overlay">
+                <button class="btn-guardar">Guardar</button>
+                <div class="image-icons">
+                    <div class="icon compartir"></div>
+                    <div class="icon tres-puntos"></div>
+                </div>
+            </div>
+        </div>
+        <div class="card-image">
+            <img src="imagenes/imagenesprint/6.jpg" alt="Descripción de la imagen">
+            <div class="image-overlay">
+                <button class="btn-guardar">Guardar</button>
+                <div class="image-icons">
+                    <div class="icon compartir"></div>
+                    <div class="icon tres-puntos"></div>
+                </div>
+            </div>
+        </div>
+        <div class="card-image">
+            <img src="imagenes/imagenesprint/7.jpg" alt="Descripción de la imagen">
+            <div class="image-overlay">
+                <button class="btn-guardar">Guardar</button>
+                <div class="image-icons">
+                    <div class="icon compartir"></div>
+                    <div class="icon tres-puntos"></div>
+                </div>
+            </div>
+        </div>
+        <div class="card-image">
+            <img src="imagenes/imagenesprint/8.jpg" alt="Descripción de la imagen">
+            <div class="image-overlay">
+                <button class="btn-guardar">Guardar</button>
+                <div class="image-icons">
+                    <div class="icon compartir"></div>
+                    <div class="icon tres-puntos"></div>
+                </div>
+            </div>
+        </div>
+        <div class="card-image">
+            <img src="imagenes/imagenesprint/9.jpeg" alt="Descripción de la imagen">
+            <div class="image-overlay">
+                <button class="btn-guardar">Guardar</button>
+                <div class="image-icons">
+                    <div class="icon compartir"></div>
+                    <div class="icon tres-puntos"></div>
+                </div>
+            </div>
+        </div>
+        <div class="card-image">
+            <img src="imagenes/imagenesprint/10.jpeg" alt="Descripción de la imagen">
+            <div class="image-overlay">
+                <button class="btn-guardar">Guardar</button>
+                <div class="image-icons">
+                    <div class="icon compartir"></div>
+                    <div class="icon tres-puntos"></div>
+                </div>
+            </div>
+        </div>
+        <div class="card-image">
+            <img src="imagenes/imagenesprint/11.jpeg" alt="Descripción de la imagen">
+            <div class="image-overlay">
+                <button class="btn-guardar">Guardar</button>
+                <div class="image-icons">
+                    <div class="icon compartir"></div>
+                    <div class="icon tres-puntos"></div>
+                </div>
+            </div>
+        </div>
+        <div class="card-image">
+            <img src="imagenes/imagenesprint/12.jpg" alt="Descripción de la imagen">
+            <div class="image-overlay">
+                <button class="btn-guardar">Guardar</button>
+                <div class="image-icons">
+                    <div class="icon compartir"></div>
+                    <div class="icon tres-puntos"></div>
+                </div>
+            </div>
+        </div>
+        <div class="card-image">
+            <img src="imagenes/imagenesprint/13.jpg" alt="Descripción de la imagen">
+            <div class="image-overlay">
+                <button class="btn-guardar">Guardar</button>
+                <div class="image-icons">
+                    <div class="icon compartir"></div>
+                    <div class="icon tres-puntos"></div>
+                </div>
+            </div>
+        </div>
+        <div class="card-image">
+            <img src="imagenes/imagenesprint/14.jpeg" alt="Descripción de la imagen">
+            <div class="image-overlay">
+                <button class="btn-guardar">Guardar</button>
+                <div class="image-icons">
+                    <div class="icon compartir"></div>
+                    <div class="icon tres-puntos"></div>
+                </div>
+            </div>
+        </div>
+        <div class="card-image">
+            <img src="imagenes/imagenesprint/15.jpeg" alt="Descripción de la imagen">
+            <div class="image-overlay">
+                <button class="btn-guardar">Guardar</button>
+                <div class="image-icons">
+                    <div class="icon compartir"></div>
+                    <div class="icon tres-puntos"></div>
+                </div>
+            </div>
+        </div>
+        <div class="card-image">
+            <img src="imagenes/imagenesprint/16.jpg" alt="Descripción de la imagen">
+            <div class="image-overlay">
+                <button class="btn-guardar">Guardar</button>
+                <div class="image-icons">
+                    <div class="icon compartir"></div>
+                    <div class="icon tres-puntos"></div>
+                </div>
+            </div>
+        </div>
+        <div class="card-image">
+            <img src="imagenes/imagenesprint/17.jpg" alt="Descripción de la imagen">
+            <div class="image-overlay">
+                <button class="btn-guardar">Guardar</button>
+                <div class="image-icons">
+                    <div class="icon compartir"></div>
+                    <div class="icon tres-puntos"></div>
+                </div>
+            </div>
+        </div>
+        <div class="card-image">
+            <img src="imagenes/imagenesprint/18.jpg" alt="Descripción de la imagen">
+            <div class="image-overlay">
+                <button class="btn-guardar">Guardar</button>
+                <div class="image-icons">
+                    <div class="icon compartir"></div>
+                    <div class="icon tres-puntos"></div>
+                </div>
+            </div>
+        </div>
+        <div class="card-image">
+            <img src="imagenes/imagenesprint/19.jpg" alt="Descripción de la imagen">
+            <div class="image-overlay">
+                <button class="btn-guardar">Guardar</button>
+                <div class="image-icons">
+                    <div class="icon compartir"></div>
+                    <div class="icon tres-puntos"></div>
+                </div>
+            </div>
+        </div>
+        <div class="card-image">
+            <img src="imagenes/imagenesprint/20.jpg" alt="Descripción de la imagen">
+            <div class="image-overlay">
+                <button class="btn-guardar">Guardar</button>
+                <div class="image-icons">
+                    <div class="icon compartir"></div>
+                    <div class="icon tres-puntos"></div>
+                </div>
+            </div>
+        </div>
+        <div class="card-image">
+            <img src="imagenes/imagenesprint/21.jpg" alt="Descripción de la imagen">
+            <div class="image-overlay">
+                <button class="btn-guardar">Guardar</button>
+                <div class="image-icons">
+                    <div class="icon compartir"></div>
+                    <div class="icon tres-puntos"></div>
+                </div>
+            </div>
+        </div>
+        <div class="card-image">
+            <img src="imagenes/imagenesprint/22.jpg" alt="Descripción de la imagen">
+            <div class="image-overlay">
+                <button class="btn-guardar">Guardar</button>
+                <div class="image-icons">
+                    <div class="icon compartir"></div>
+                    <div class="icon tres-puntos"></div>
+                </div>
+            </div>
+        </div>
+        <div class="card-image">
+            <img src="imagenes/imagenesprint/23.jpg" alt="Descripción de la imagen">
+            <div class="image-overlay">
+                <button class="btn-guardar">Guardar</button>
+                <div class="image-icons">
+                    <div class="icon compartir"></div>
+                    <div class="icon tres-puntos"></div>
+                </div>
+            </div>
+        </div>
+        <div class="card-image">
+            <img src="imagenes/imagenesprint/24.jpg" alt="Descripción de la imagen">
+            <div class="image-overlay">
+                <button class="btn-guardar">Guardar</button>
+                <div class="image-icons">
+                    <div class="icon compartir"></div>
+                    <div class="icon tres-puntos"></div>
+                </div>
+            </div>
+        </div>
+        <div class="card-image">
+            <img src="imagenes/imagenesprint/25.jpg" alt="Descripción de la imagen">
+            <div class="image-overlay">
+                <button class="btn-guardar">Guardar</button>
+                <div class="image-icons">
+                    <div class="icon compartir"></div>
+                    <div class="icon tres-puntos"></div>
+                </div>
+            </div>
+        </div>
+        <div class="card-image">
+            <img src="imagenes/imagenesprint/26.jpg" alt="Descripción de la imagen">
+            <div class="image-overlay">
+                <button class="btn-guardar">Guardar</button>
+                <div class="image-icons">
+                    <div class="icon compartir"></div>
+                    <div class="icon tres-puntos"></div>
+                </div>
+            </div>
+        </div>
+        <div class="card-image">
+            <img src="imagenes/imagenesprint/27.jpg" alt="Descripción de la imagen">
+            <div class="image-overlay">
+                <button class="btn-guardar">Guardar</button>
+                <div class="image-icons">
+                    <div class="icon compartir"></div>
+                    <div class="icon tres-puntos"></div>
+                </div>
+            </div>
+        </div>
+        <div class="card-image">
+            <img src="imagenes/imagenesprint/28.jpg" alt="Descripción de la imagen">
+            <div class="image-overlay">
+                <button class="btn-guardar">Guardar</button>
+                <div class="image-icons">
+                    <div class="icon compartir"></div>
+                    <div class="icon tres-puntos"></div>
+                </div>
+            </div>
+        </div>
+        <div class="card-image">
+            <img src="imagenes/imagenesprint/29.jpg" alt="Descripción de la imagen">
+            <div class="image-overlay">
+                <button class="btn-guardar">Guardar</button>
+                <div class="image-icons">
+                    <div class="icon compartir"></div>
+                    <div class="icon tres-puntos"></div>
+                </div>
+            </div>
+        </div>
+        <div class="card-image">
+            <img src="imagenes/imagenesprint/30.jpg" alt="Descripción de la imagen">
+            <div class="image-overlay">
+                <button class="btn-guardar">Guardar</button>
+                <div class="image-icons">
+                    <div class="icon compartir"></div>
+                    <div class="icon tres-puntos"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <a href="https://www.pinterest.com" id="pinterest-icon"></a>
+    </footer>
 </body>
 
 </html>
