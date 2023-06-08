@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    display: inline-block;
+    width: 200px;
+}
+
+input[type="number"] {
+    width: 100px;
+    margin-right: 10px;
+}
+
+button {
+    margin-top: 10px;
+}
+
+#resultado {
+    margin-top: 20px;
+}

@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+}
+
+select, input[type="number"] {
+    width: 150px;
+    margin-right: 10px;
+}
+
+button {
+    margin-top: 10px;
+}
+
+#ventasPorVendedor, #empleadoDelMes {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
