@@ -6,7 +6,9 @@ function mostrarImpares() {
         resultado += i + " ";
     }
 
+
     document.getElementById("resultado1").textContent = resultado;
+    console.log(resultado);
 }
 
 // Ejercicio 2: Nombres de Pokémons
@@ -23,17 +25,12 @@ function mostrarNombres() {
     document.getElementById("resultado2").textContent = resultado;
 }
 
-// Obtener nombre de Pokémon por número
+// Función para obtener el nombre de un Pokémon por su número
 function obtenerNombrePokemon(numero) {
-    for (let i = 0; i < pokemonData.length; i++) {
-        if (pokemonData[i].number === numero) {
-            return pokemonData[i].name;
-        }
-    }
-    return "";
+    return pokemons[numero - 1];
 }
-
-// Ejercicio 3: Elementos Numéricos en un Arreglo
+    
+    // Ejercicio 3: Elementos Numéricos en un Arreglo
 function mostrarNumeros() {
     let arreglo = [4, "dos", 8, "tres", 5, 9, 1, "cero"];
     let resultado = "";
@@ -48,16 +45,14 @@ function mostrarNumeros() {
 }
 
 // Arreglo de Pokémons
-const pokemonData = [
-    { number: 1, name: "Bulbasaur" },
-    { number: 2, name: "Ivysaur" },
-    { number: 3, name: "Venusaur" },
-    { number: 4, name: "Charmander" },
-    { number: 5, name: "Charmeleon" },
-    { number: 6, name: "Charizard" },
-    { number: 7, name: "Squirtle" },
-    { number: 8, name: "Wartortle" },
-    { number: 9, name: "Blastoise" },
-    { number: 10, name: "Caterpie" },
-    // ... más Pokémon
+const pokemons = [
+    'bulbasaur', 'ivysaur', 'venusaur', 'charmander', 'charmeleon', 'charizard', 'squirtle', 'wartortle', 'blastoise', 'caterpie',
+    'metapod', 'butterfree', 'weedle', 'kakuna', 'beedrill', 'pidgey', 'pidgeotto', 'pidgeot', 'rattata', 'raticate', 'spearow',
+    'fearow', 'ekans', 'arbok', 'pikachu', 'raichu', 'sandshrew', 'sandslash', 'nidoran-f', 'nidorina', 'nidoqueen', 'nidoran-m',
+    'nidorino', 'nidoking', 'clefairy', 'clefable', 'vulpix', 'ninetales', 'jigglypuff', 'wigglytuff', 'zubat', 'golbat', 'oddish',
+    'gloom', 'vileplume', 'paras', 'parasect', 'venonat', 'venomoth', 'diglett', 'dugtrio', 'meowth', 'persian', 'psyduck', 'golduck',
+    'mankey', 'primeape', 'growlithe', 'arcanine', 'poliwag', 'poliwhirl', 'poliwrath', 'abra', 'kadabra', 'alakazam', 'machop',
+    'machoke', 'machamp', 'bellsprout', 'weepinbell', 'victreebel', 'tentacool', 'tentacruel', 'geodude', 'graveler', 'golem',
+    'ponyta', 'rapidash', 'slowpoke', 'slowbro', 'magnemite', 'magneton', 'farfetchd', 'doduo', 'dodrio', 'seel', 'dewgong', 'grimer',
+    'muk', 'shellder', 'cloyster', 'gastly', 'haunter', 'gengar', 'onix', 'drowzee', 'hypno', 'krabby', 'kingler', 'voltorb'
 ];
