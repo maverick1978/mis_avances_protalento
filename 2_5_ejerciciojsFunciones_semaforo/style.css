@@ -1,0 +1,18 @@
+.luz {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.luz-verde {
+    background-image: url('luz-verde.png');
+}
+
+.luz-amarilla {
+    background-image: url('luz-amarilla.png');
+}
+
+.luz-roja {
+    background-image: url('luz-roja.png');
+}
