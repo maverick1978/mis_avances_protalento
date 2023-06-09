@@ -1,20 +1,32 @@
 // Datos de productos y vendedores
-var productos = [
-    { nombre: "Aqua", precio: 200 },
-    { nombre: "Emoción", precio: 180 },
-    { nombre: "Alegría", precio: 160 },
-    { nombre: "Frescura", precio: 150 }
+const productos = [
+    {
+        nombre: "Aqua", precio: 200
+    },
+    {
+        nombre: "Emocion", precio: 180
+    },
+    {
+        nombre: "Alegria", precio: 160
+    },
+    {
+        nombre: "Frescura", precio: 150
+    },
 ];
 
-var vendedores = [
-    { nombre: "Juana", ventas: [] },
-    { nombre: "Pedro", ventas: [] }
+const vendedores = [
+    {
+        nombre: "Juana", ventas: []
+    },
+    {
+        nombre: "Pedro", ventas: []
+    }
 ];
 
 // Función para registrar una venta
 function registrarVenta() {
-    var productoSeleccionado = document.getElementById("producto").value;
-    var cantidad = document.getElementById("cantidad").value;
+    let productoSeleccionado = document.getElementById("producto").value;
+    let cantidad = document.getElementById("cantidad").value;
 
     // Validar que se ingrese un valor numérico
     if (!esNumeroValido(cantidad)) {
@@ -22,9 +34,9 @@ function registrarVenta() {
         return;
     }
 
-    var vendedor = obtenerVendedorAleatorio();
-    var producto = obtenerProductoPorNombre(productoSeleccionado);
-    var venta = {
+    let vendedor = obtenerVendedorAleatorio();
+    let producto = obtenerProductoPorNombre(productoSeleccionado);
+    let venta = {
         producto: producto.nombre,
         cantidad: parseInt(cantidad),
         total: producto.precio * parseInt(cantidad)
@@ -43,7 +55,7 @@ function esNumeroValido(numero) {
 
 // Función para obtener un vendedor aleatorio
 function obtenerVendedorAleatorio() {
-    var indice = Math.floor(Math.random() * vendedores.length);
+    let indice = Math.floor(Math.random() * vendedores.length);
     return vendedores[indice];
 }
 
@@ -56,7 +68,7 @@ function obtenerProductoPorNombre(nombre) {
 
 // Función para calcular la suma total de dinero recolectada por un vendedor
 function calcularTotalVentas(vendedor) {
-    var total = 0;
+    let total = 0;
     vendedor.ventas.forEach(function (venta) {
         total += venta.total;
     });
@@ -65,11 +77,11 @@ function calcularTotalVentas(vendedor) {
 
 // Función para encontrar el vendedor con la mayor cantidad de ventas
 function encontrarEmpleadoDelMes() {
-    var vendedorDelMes = null;
-    var maxVentas = 0;
+    let vendedorDelMes = null;
+    let maxVentas = 0;
 
     vendedores.forEach(function (vendedor) {
-        var totalVentas = calcularTotalVentas(vendedor);
+        let totalVentas = calcularTotalVentas(vendedor);
         if (totalVentas > maxVentas) {
             vendedorDelMes = vendedor;
             maxVentas = totalVentas;
@@ -83,7 +95,7 @@ function encontrarEmpleadoDelMes() {
 
 // Función para actualizar la sección de ventas por vendedor en el HTML
 function actualizarVentasPorVendedor() {
-    var ventasPorVendedorHTML = "";
+    let ventasPorVendedorHTML = "";
 
     vendedores.forEach(function (vendedor) {
         ventasPorVendedorHTML += "<h3>Vendedor: " + vendedor.nombre + "</h3>";
@@ -100,7 +112,7 @@ function actualizarVentasPorVendedor() {
 
 // Función para actualizar la sección de empleado del mes en el HTML
 function actualizarEmpleadoDelMes() {
-    var empleadoDelMes = encontrarEmpleadoDelMes();
+    let empleadoDelMes = encontrarEmpleadoDelMes();
 
     if (empleadoDelMes) {
         document.getElementById("empleadoDelMes").innerHTML = "<p>Empleado del Mes: " + empleadoDelMes.nombre + "</p>";
