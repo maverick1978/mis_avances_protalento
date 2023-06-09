@@ -27,11 +27,14 @@ function mostrarLoteria() {
             resultado += i + " ";
         }
     }
-
+    console.log(resultado);
     document.getElementById("resultado2").textContent = resultado;
 }
 
+
 // Ejercicio 3: Arreglo de Números
+
+
 let numeros = [];
 function capturarNumeros() {
     let numero = parseInt(document.getElementById("numero4").value);
@@ -42,10 +45,11 @@ function capturarNumeros() {
         numeros.push(numero);
         document.getElementById("numero4").value = "";
     }
+    
 }
-
 function mostrarNumerosCapturados() {
     let resultado = "Números capturados: " + numeros.join(", ");
+    console.log(resultado);
     document.getElementById("resultado3").textContent = resultado;
 }
 
@@ -101,3 +105,5 @@ function mostrarMensajePersonalizado() {
 
     document.getElementById("resultado5").textContent = mensaje;
 }
+
+
