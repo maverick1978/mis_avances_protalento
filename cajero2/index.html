@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajero Automático</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="login">
+            <h2>Inicio de Sesión</h2>
+            <div class="form-group">
+                <label for="account-select">Selecciona una cuenta:</label>
+                <select id="account-select" class="form-control">
+                    <option value="0">Persona 1</option>
+                    <option value="1">Persona 2</option>
+                    <option value="2">Persona 3</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="password-input">Contraseña:</label>
+                <input type="password" id="password-input" class="form-control">
+            </div>
+            <button id="login-btn" class="btn btn-danger">Iniciar Sesión</button>
+        </div>
+
+        <div id="transactions" class="hidden">
+            <h2>Bienvenido, <span id="account-name"></span></h2>
+            <div id="balance">
+                <p>Saldo actual: <span id="balance-amount"></span></p>
+            </div>
+            <div class="form-group">
+                <label for="deposit-input">Monto a Depositar:</label>
+                <input type="number" id="deposit-input" class="form-control">
+            </div>
+            <button id="deposit-btn" class="btn btn-danger">Depositar</button>
+            <div class="form-group">
+                <label for="withdraw-input">Monto a Retirar:</label>
+                <input type="number" id="withdraw-input" class="form-control">
+            </div>
+            <button id="withdraw-btn" class="btn btn-danger">Retirar</button>
+            <div class="form-group">
+                <label for="transfer-input">Monto a Transferir:</label>
+                <input type="number" id="transfer-input" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="recipient-account-select">Cuenta Destinataria:</label>
+                <select id="recipient-account-select" class="form-control">
+                    <option value="0">Persona 1</option>
+                    <option value="1">Persona 2</option>
+                    <option value="2">Persona 3</option>
+                </select>
+            </div>
+            <button id="transfer-btn" class="btn btn-danger">Transferir</button>
+            <button id="logout-btn" class="btn btn-danger">Salir</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

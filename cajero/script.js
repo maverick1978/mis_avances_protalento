@@ -24,7 +24,6 @@ function iniciarSesion() {
         alert("Password incorrecto. Intenta nuevamente.");
     }
 }
-
 // Función para consultar el saldo
 function consultarSaldo() {
     if (passwordCorrecto) {
