@@ -1,5 +1,5 @@
 body {
-    background-image: url('fondo.jpg');
+    background-image: url('/mis_avances_protalento/pokeApi/img/fondopoke.png');
     background-size: cover;
     font-family: Arial, sans-serif;
     margin: 0;
@@ -41,6 +41,11 @@ body {
     height: auto;
   }
 
+  .pokemon-image.selected {
+    width: 300px;
+    max-width: 100%;
+  }
+
   .pokemon-height,
   .pokemon-weight,
   .pokemon-abilities {
@@ -75,5 +80,26 @@ body {
   
   .search-btn:hover {
     background-color: #555;
+  }
+  .pokemon-name-style {
+    font-size: 40px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .pokemon-height-style {
+    color: blue;
+    font-style: italic;
+    font-size: 24px;
+  }
+  
+  .pokemon-weight-style {
+    color: green;
+    font-size: 24px;
+  }
+  
+  .pokemon-abilities-style {
+    color: purple;
+    font-size: 24px;
   }
   

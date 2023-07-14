@@ -23,6 +23,13 @@ async function getPokemonById(id) {
     weightElement.textContent = 'Peso: ' + pokemonData.weight;
     abilitiesElement.textContent = 'Habilidades: ' + pokemonData.abilities.map(ability => ability.ability.name).join(', ');
 
+// Agregar clases personalizadas a los elementos del DOM
+nameElement.classList.add('pokemon-name-style');
+heightElement.classList.add('pokemon-height-style');
+weightElement.classList.add('pokemon-weight-style');
+abilitiesElement.classList.add('pokemon-abilities-style');
+
+
     // Obtener la URL de la imagen del Pokémon
     const imageUrl = pokemonData.sprites.front_default;
 
@@ -30,7 +37,7 @@ async function getPokemonById(id) {
     imageElement.src = imageUrl;
     imageElement.alt = pokemonData.name;
 
-
+// Mostrar los datos del Pokémon en los elementos del DOM
   } catch (error) {
     console.error('Error al obtener información del Pokémon:', error.message);
   }
@@ -40,4 +47,26 @@ async function getPokemonById(id) {
 searchButton.addEventListener('click', function() {
   const pokemonId = pokemonIdInput.value;
   getPokemonById(pokemonId);
+});
+
+// Obtener todos los elementos de imagen del Pokémon
+const pokemonImages = document.querySelectorAll('.pokemon-image');
+
+// Función para marcar la imagen del Pokémon seleccionado
+function selectPokemonImage() {
+  // Quitar la clase 'selected' de todas las imágenes del Pokémon
+  pokemonImages.forEach(image => {
+    image.classList.remove('selected');
+  });
+
+  // Agregar la clase 'selected' a la imagen del Pokémon actual
+  const selectedPokemonImage = document.getElementById('pokemon-image');
+  selectedPokemonImage.classList.add('selected');
+}
+
+// Manejar el evento de clic del botón de búsqueda
+searchButton.addEventListener('click', function() {
+  const pokemonId = pokemonIdInput.value;
+  getPokemonById(pokemonId);
+  selectPokemonImage(); // Llamar a la función para marcar la imagen del Pokémon seleccionado
 });
