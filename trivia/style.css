@@ -1,0 +1,22 @@
+/* Estilos CSS personalizados */
+.container {
+    max-width: 600px;
+  }
+  
+  #contenedor-preguntas {
+    display: none;
+  }
+  
+  .pregunta {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .respuesta {
+    margin-left: 20px;
+  }
+  
+  #puntaje-final {
+    font-weight: bold;
+  }
+  
